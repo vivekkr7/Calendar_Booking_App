@@ -3,7 +3,7 @@ import 'package:http/http.dart' as http;
 import '../models/booking.dart';
 
 class ApiService {
-  static const String baseUrl = 'http://10.201.12.128:3000/bookings';
+  static const String baseUrl = 'http://localhost:3000/bookings'; //Replace it with the ipV4 address of your device
 
   static Future<List<Booking>> fetchBookings() async {
     final response = await http.get(Uri.parse(baseUrl));
